@@ -1,0 +1,9 @@
+steps:
+    Clone:
+        type: git-clone
+
+    Push:
+        type: docker-push
+        image_name: "microtica/strapi-template"
+        tag: "{{MIC_PIPELINE_EXECUTION_ID}}"
+        registry: dockerhub
